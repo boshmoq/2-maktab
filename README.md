@@ -4,7 +4,7 @@ This was my **first big project**, built back in **2021**, when I decided my sch
 ---
 ## 🌱 About the Project
 The **2-Maktab Website** was created as a digital home for my school.  
-It was my first real dive into web development — the project where curiosity turned into code and code turned into something people could actually click on.
+It was my first real dive into web development, the project where curiosity turned into code and code turned into something people could actually click on.
 
 ---
 ## 🛠 Tech Stack
