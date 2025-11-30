@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+h1 {
+  text-align: center;
+  /* text-decoration: underline; */
+  font-family: 'Poppins', monospace;
+  font-weight: bold;
+}
+
+.video-card {
+  display: inline-block;
+  width: 45vw;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    vertical-align: top;
+  /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+}
+
+.video-container {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+}
+
+.video {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.video-title {
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-bottom: 30px;
+}
+
+/* .video-time {
+  position: absolute;
+  bottom: 7px;
+  right: 4px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-weight: 500;
+} */
+
+
+@media only screen and (max-width: 650px) {
+  .video-card {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(39, 39, 39);
+  }
+  .video {
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .video-title {
+    font-size: 16px;
+  }
+  .inside-box ul {
+    padding-left: 6px;
+  }
+}

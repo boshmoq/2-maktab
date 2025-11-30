@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,800;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url(../styles/general-styles.css);
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif !important;
+  color: var(--blue) !important;
+}
+
+.first__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text-card {
+  width: 25%;
+  margin: 60px 0 20px 0;
+  padding: 10px 40px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgb(188, 188, 188);
+  box-shadow: rgba(255, 255, 255, 0.8) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.text-card lord-icon {
+  display: inline-block;
+}
+.text-card h3 {
+  display: inline-block;
+  vertical-align: center;
+  margin: 25px 0 0 0;
+}
+.one__line {
+  margin: 46px 0 0 0;
+  font-size: 18.5px;
+}
+.secondary {
+  font-size: 16px;
+  color: var(--orange);
+}
+.big {
+  font-size: 19px;
+}
+
+
+.center {
+  width: 60%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  display: block;
+  /* transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%); */
+  padding: 20px;
+  /* box-sizing: border-box; */
+  /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); */
+}
+h1 {
+  margin: 0;
+  margin-left: 25px;
+  padding: 0;
+  color: var(--blue);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.skillBox {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 20px 0;
+}
+.skillBox p {
+  color: var(--orange);
+  text-transform: uppercase;
+  margin: 0 0 5px;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 20px !important;
+}
+.skillBox p:nth-child(2) {
+  float: right;
+  position: relative;
+  margin-right: 25px;
+  top: -25px;
+}
+.skill {
+  background: rgb(213, 213, 213);
+  padding: 4px;
+  box-sizing: border-box;
+  border: 1px solid var(--blue);
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  margin-left: 10px !important;
+  margin-right: 10px;
+}
+.skill_level {
+  background: var(--blue);
+  width: 90vw;
+  height: 10px;
+}
+
+@media screen and (max-width: 380px) {
+  
+  .inside-box ul li {
+    margin: 0 17px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body, .main-div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .first__box {
+    flex-wrap: wrap;
+  }
+  .text-card {
+    width: 70px;
+    margin: 0;
+    padding: 5px;
+    flex-direction: column;
+  }
+  .text-card lord-icon {
+    height: 30px !important;
+    width: 30px !important;
+    margin-left: 19px;
+  }
+  .text-card h3 {
+    font-size: 5px;
+    text-align: center;
+    margin-top: 3px;
+  }
+  .secondary {
+    font-size: 7px;
+  }
+  .big {
+    font-size: 9px;
+  }
+}
+
+.green {
+  color: #0f0;
+}
+.red {
+  color: #f00 !important;
+}
+
+div.skill {
+  margin-bottom: 40px;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.text-box {
+  display: flex;
+  justify-content: center;
+}
+
+.maqsad ul li {
+  width: 500px;
+  display: list-item;
+  color: var(--orange);
+  /* list-style-type: /* "\1F4A1"  url(../styles/bulb.webp)*/ /* !important; */
+}
+
+.maqsad ul li::marker {
+  content: '💡';
+}

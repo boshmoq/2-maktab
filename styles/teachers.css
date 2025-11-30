@@ -1,0 +1,156 @@
+@import url(../styles/general-styles.css);
+
+body {
+  font-family: "Montserrat", "Oswald", sans-serif;
+  font-weight: bold;
+}
+/* .search-box {
+  display: flex;
+  justify-content: center;
+} */
+
+.container {
+  display: flex;
+  padding: 50px;
+}
+
+.leftMenu {
+  flex: 1;
+}
+
+h1{
+  font-size: 30px;
+  color: #555;
+  font-weight: 600;
+}
+
+
+.cats{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cat{
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 5px;
+}
+
+.content {
+  flex: 4;
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+img{
+  height: 300px;
+  width: 290px;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.3s;
+}
+
+/* img:hover {
+  height: 300px;
+  width: 290px;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5); /* Safari 3-8 */ /*
+  -moz-transform: scale(1.5);
+} */
+
+.name{
+  font-weight: 600;
+}
+
+.priceText {
+  margin: 0;
+}
+
+.teachers__search {
+  display: block;
+  border-radius: 17px;
+  padding: 10px;
+  width: 200px;
+  border: none;
+  margin-top: 20px;
+  background-color: rgb(244, 244, 244);
+  border: 3px solid rgb(37, 107, 255);
+  box-shadow: rgba(37, 107, 255, .3) 0px 4px 16px, rgba(37, 107, 255, .3) 0px 8px 24px, rgba(37, 107, 255, .3) 0px 16px 56px;
+  filter: drop-shadow();
+}
+.teachers__search:focus {
+  outline: none;
+  border: 3px solid transparent;
+}
+.teachers__search::placeholder:focus {
+  color: black;
+}
+
+@media screen and (max-width: 650px) {
+  .background-image {
+  height: 100px;
+  }
+  li.abubakr-list {
+    font-size: 10px;
+  }
+  .teachers__search {
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+  div.search-box {
+    margin-top: 10px;
+  }
+  .container {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .cats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .cat {
+    font-size: 13px;
+  }
+  .leftMenu {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  nav.inside-box {
+    padding-bottom: 9 !important;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 !important;
+  }
+  nav ul li {
+    margin: 0 !important;
+  }
+  div.product {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #256bff;
+  }
+  .leftMenu h1 {
+    margin-bottom: 10px;
+  }
+}
